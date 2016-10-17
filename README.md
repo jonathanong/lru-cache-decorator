@@ -8,6 +8,28 @@
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
+A decorator that caches functions.
+
+- Supports both sync and async functions.
+- Supports hashing the function arguments - only necessary if you have really long/large function arguments.
+
+## API
+
+```js
+const decorate = require('lru-cache-decorator')
+```
+
+### fn = decorate(options)(fn)
+
+Options are passed to [`lru-cache`](https://github.com/isaacs/node-lru-cache).
+
+Other options:
+
+- `async = false` - whether the function is async (i.e. uses promises)
+  - Caches functions as sync by default, but async functions would still work
+  - Sync functions do not cache errors while async functions do since it's stored as a rejected promise
+- `hash = Algorithm<String>|<Function>` - a function to hash the stringified function arguments. You can also supply a hashing function algorithm such as `sha256`
+
 [npm-image]: https://img.shields.io/npm/v/lru-cache-decorator.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/lru-cache-decorator
 [travis-image]: https://img.shields.io/travis/jonathanong/lru-cache-decorator/master.svg?style=flat-square
