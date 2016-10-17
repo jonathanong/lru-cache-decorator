@@ -1,15 +1,21 @@
 {
   "name": "lru-cache-decorator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "LRU Cache function decorator based on arguments",
+  "main": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard --fix 'lib/**/*.js'",
+    "test": "jest",
+    "test-cov": "jest --coverage"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "license": "MIT",
+  "repository": "jonathanong/lru-cache-decorator",
   "dependencies": {
     "json-stable-stringify": "^1.0.1",
     "lru-cache": "^4.0.1"
+  },
+  "devDependencies": {
+    "jest": "^16.0.1"
   }
 }
