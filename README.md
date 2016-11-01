@@ -29,6 +29,7 @@ Other options:
   - Caches functions as sync by default, but async functions would still work
   - Sync functions do not cache errors while async functions do since it's stored as a rejected promise
 - `hash = Algorithm<String>|<Function>` - a function to hash the stringified function arguments. You can also supply a hashing function algorithm such as `sha256`
+- `cacheErrors = true` - when `false` and `async=true`, errors are not cached.
 
 [npm-image]: https://img.shields.io/npm/v/lru-cache-decorator.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/lru-cache-decorator
