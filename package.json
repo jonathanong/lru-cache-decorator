@@ -12,6 +12,7 @@
   "license": "MIT",
   "repository": "jonathanong/lru-cache-decorator",
   "dependencies": {
+    "debug": "^2.3.2",
     "json-stable-stringify": "^1.0.1",
     "lru-cache": "^4.0.1"
   },
