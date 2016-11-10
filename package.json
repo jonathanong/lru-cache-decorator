@@ -1,6 +1,6 @@
 {
   "name": "lru-cache-decorator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "LRU Cache function decorator based on arguments",
   "main": "lib",
   "scripts": {
