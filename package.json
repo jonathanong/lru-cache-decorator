@@ -12,12 +12,12 @@
   "license": "MIT",
   "repository": "jonathanong/lru-cache-decorator",
   "dependencies": {
-    "debug": "^2.3.2",
+    "debug": "^3.1.0",
     "json-stable-stringify": "^1.0.1",
     "lru-cache": "^4.0.1"
   },
   "devDependencies": {
-    "jest": "^16.0.1",
-    "standard": "^8.4.0"
+    "jest": "^22.3.0",
+    "standard": "^11.0.0"
   }
 }

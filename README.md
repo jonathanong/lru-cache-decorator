@@ -6,6 +6,7 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/jonathanong/lru-cache-decorator.svg)](https://greenkeeper.io/)
 [![Downloads][downloads-image]][downloads-url]
 
 A decorator that caches functions.
