@@ -1,6 +1,7 @@
 node_js:
   - 6
   - 7
+  - 10
 language: node_js
 sudo: false
 script:
